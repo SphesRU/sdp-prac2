@@ -6,5 +6,50 @@ package sdp.prac2;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 class AppTest {
+    // test task 4
+    @Test void testTask4() {
+        // Arrange
+        SimpleFunctions funcs = new SimpleFunctions();
+        List<Integer> a = new ArrayList<Integer>();
+        List<Integer> b = new ArrayList<Integer>();
+        List<Integer> expected = new ArrayList<Integer>();
+        a.add(1);
+        a.add(2);
+        a.add(3);
+        b.add(4);
+        b.add(5);
+        b.add(6);
+        expected.add(6);
+        expected.add(10);
+        expected.add(12);
+        // Act
+        List<Integer> listGot = funcs.task4(a, b);
+        // Assert
+        assertEquals(expected, listGot);
+  
+    }
+    @Test void anotherTestTask4() {
+        // Arrange
+        SimpleFunctions funcs = new SimpleFunctions();
+        List<Integer> a = new ArrayList<Integer>();
+        List<Integer> b = new ArrayList<Integer>();
+        List<Integer> expected = null;
+        a.add(1);
+        a.add(2);
+        a.add(3);
+        a.add(4);
+        b.add(4);
+        b.add(5);
+        b.add(6);
+        // Act
+        List<Integer> listGot = funcs.task4(a, b);
+        // Assert
+        assertEquals(expected, listGot);
+  
+    }
+
 }
