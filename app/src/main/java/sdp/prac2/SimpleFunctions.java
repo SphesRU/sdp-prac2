@@ -20,7 +20,7 @@ public class SimpleFunctions {
         return count == 0;
     }
 
-    public static int task1(List<Integer> list1, List<Integer> list2) {
+    public int task1(List<Integer> list1, List<Integer> list2) {
         int sum = 0;
         for (int i = 0; i < list2.size(); i++) {
             if (list2.get(i) < list1.size()) {
