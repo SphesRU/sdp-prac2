@@ -19,7 +19,18 @@ public class SimpleFunctions {
         }
         return count == 0;
     }
- 
+    public static List<Integer> Task4(List<Integer> a, List<Integer> b) {
+        if (a.size() != b.size()) {
+            return null;
+        } 
+        else {
+            List<Integer> result = new ArrayList<>();
+            for (int i = 0; i < a.size(); i++) {
+                result.add(a.get(i) * b.get(b.size()-i-1));
+            }
+            return result;
+        }
+    }
     public int task1(List<Integer> list1, List<Integer> list2) {
         int sum = 0;
         for (int i = 0; i < list2.size(); i++) {
