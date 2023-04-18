@@ -19,7 +19,7 @@ public class SimpleFunctions {
         }
         return count == 0;
     }
-
+ 
     public int task1(List<Integer> list1, List<Integer> list2) {
         int sum = 0;
         for (int i = 0; i < list2.size(); i++) {
@@ -37,6 +37,6 @@ public class SimpleFunctions {
             }
         }
         return result;
-    } //Task 2
+    } /
 
 }
