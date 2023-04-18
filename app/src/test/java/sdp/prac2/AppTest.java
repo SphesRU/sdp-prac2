@@ -91,5 +91,18 @@ class AppTest {
         assertEquals(expected, listGot);
 
     }
+     @Test
+    public void testtask3() {
+        String str = "((()))";
+        boolean result = Task3(str);
+        assertTrue(result);
+    }
+
+    @Test
+    public void testtask3() {
+        String str = "(()()";
+        boolean result = Task3(str);
+        assertFalse(result);
+    }
 
 }
