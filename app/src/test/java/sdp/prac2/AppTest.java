@@ -105,4 +105,55 @@ class AppTest {
         assertFalse(result);
     }
 
+    @Test
+    public void test1Task6(){
+        SimpleFunctions funcs = new SimpleFunctions();
+
+        // Input
+        List<Integer> lst1 = new ArrayList<Integer>();
+        
+        lst1.add(320);
+        lst1.add(1);
+        lst1.add(5732);
+        lst1.add(666);
+        lst1.add(32);
+
+        // Expected Output
+        List<Integer> res1 = new ArrayList<Integer>();
+
+        res1.add(300);
+        res1.add(100);
+        res1.add(6000);
+        res1.add(700);
+        res1.add(100);
+
+    }
+
+
+    @Test
+    public void test2Task6(){
+        SimpleFunctions funcs = new SimpleFunctions();
+
+        // Input
+        List<Integer> lst2 = new ArrayList<Integer>();
+        
+        lst2.add(73);
+        lst2.add(9);
+        lst2.add(182);
+        lst2.add(266);
+        lst2.add(1782);
+
+        // Expected Output
+        List<Integer> res2 = new ArrayList<Integer>();
+
+        res2.add(100);
+        res2.add(100);
+        res2.add(200);
+        res2.add(300);
+        res2.add(2000);
+
+    }
+
+    
+
 }
