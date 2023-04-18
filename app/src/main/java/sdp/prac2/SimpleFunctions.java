@@ -29,5 +29,14 @@ public class SimpleFunctions {
         }
         return sum;
     }
+      public static List<String> task2(List<String> lst) {
+        List<String> result = new ArrayList<>();
+        for (String s : lst) {
+            if (s.length() > 1) {
+                result.add(s.substring(1));
+            }
+        }
+        return result;
+    } //Task 2
 
 }
