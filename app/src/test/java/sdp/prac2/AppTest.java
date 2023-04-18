@@ -33,19 +33,12 @@ class AppTest {
   
     }
 
-    @Test void anotherTestTask4() {
+    @Test void EditedTestTask4() {
         // Arrange
         SimpleFunctions funcs = new SimpleFunctions();
-        List<Integer> a = new ArrayList<Integer>();
-        List<Integer> b = new ArrayList<Integer>();
+        List<Integer> a = Arrays.asList(1, 2, 3, 4);
+        List<Integer> b = Arrays.asList(5, 6, 7, 8);
         List<Integer> expected = null;
-        a.add(1);
-        a.add(2);
-        a.add(3);
-        a.add(4);
-        b.add(4);
-        b.add(5);
-        b.add(6);
         // Act
         List<Integer> listGot = funcs.task4(a, b);
         // Assert
