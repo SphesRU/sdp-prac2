@@ -40,7 +40,7 @@ public class SimpleFunctions {
         }
         return sum;
     }
-      public static List<String> task2(List<String> lst) {
+    public static List<String> task2(List<String> lst) {
         List<String> result = new ArrayList<>();
         for (String s : lst) {
             if (s.length() > 1) {
@@ -48,6 +48,6 @@ public class SimpleFunctions {
             }
         }
         return result;
-    } /
+    } 
 
 }

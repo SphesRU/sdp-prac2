@@ -39,6 +39,13 @@ class AppTest {
         List<Integer> a = Arrays.asList(1, 2, 3, 4);
         List<Integer> b = Arrays.asList(5, 6, 7, 8);
         List<Integer> expected = null;
+        a.add(1);
+        a.add(2);
+        a.add(3);
+        a.add(4);
+        b.add(4);
+        b.add(5);
+        b.add(6);
         // Act
         List<Integer> listGot = funcs.task4(a, b);
         // Assert
@@ -97,5 +104,17 @@ class AppTest {
         boolean result = Task3(str);
         assertFalse(result);
     }
-
+    
+    @Test void task4Test() {
+            // Arrange
+            SimpleFunctions funcs = new SimpleFunctions();
+            List<Integer> a = Arrays.asList(1, 2, 3, 4);
+            List<Integer> b = Arrays.asList(5, 6, 7, 8);
+            List<Integer> expected = null;
+            // Act
+            List<Integer> gotResults = funcs.task4(a, b);
+            // Assert
+            assertEquals(expected, gotResults);
+      
+        }
 }
